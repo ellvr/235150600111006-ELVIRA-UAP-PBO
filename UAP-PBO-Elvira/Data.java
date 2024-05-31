@@ -10,7 +10,7 @@ public class Data {
         Scanner scanner = new Scanner(System.in);
 
         // Input masa tanam
-        System.out.print("Masukkan masa tanam (dalam bulan): ");
+        System.out.print("Masukkan masa tanam: ");
         int masaTanamBulan = scanner.nextInt();
         int masaTanamHari = masaTanamBulan * 30;
 
@@ -63,12 +63,12 @@ public class Data {
                 tanamanBaru = new Persik();
                 break;
             default:
-                System.out.println("Pilihan tidak valid, menanam Tomat sebagai default.");
+                System.out.println("Pilihan tidak valid.");
                 tanamanBaru = new Tomat();
                 break;
         }
         tanamans.add(tanamanBaru);
-        System.out.println("Berhasil menanam " + tanamanBaru.getClass().getSimpleName() + ".");
+        System.out.println("Berhasil menanam.");
     }
 
     public void info() {
